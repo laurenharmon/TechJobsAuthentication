@@ -4,6 +4,15 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Migrations\20210216013824_ComeOn.cs" />
+    <Compile Remove="Migrations\20210216013824_ComeOn.Designer.cs" />
+    <Compile Remove="Migrations\20210216014147_Another.cs" />
+    <Compile Remove="Migrations\20210216014147_Another.Designer.cs" />
+    <Compile Remove="Migrations\20210216015632_Initial.cs" />
+    <Compile Remove="Migrations\20210216015632_Initial.Designer.cs" />
+  </ItemGroup>
+
 
 
   <ItemGroup>
@@ -12,6 +21,8 @@
     <Folder Include="Migrations\" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.6">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
